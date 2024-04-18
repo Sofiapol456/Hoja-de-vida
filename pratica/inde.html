@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="ruta/estilos.css">
+
+    <style>
+       .row>.col, .bd-example-row .row>[class^="col-"]{
+          padding-top: .75rem;
+          padding-bottom: .75rem;
+          background-color: rgb(255, 255, 255);
+          border: 1px solid rgba(39,41,43,0.1);
+       }
+
+       .sin-estilo {
+        background-color: transparent; /* Hace que el fondo del campo de entrada sea transparente */
+        border: none; /* Elimina el borde del campo de entrada */
+    }
+    .row>.col,
+    .bd-example-row .row>[class^="col-"] {
+        padding: top 0.75rem;
+        padding-bottom: .75rem;
+        background-color: rgb(18,18,17,0.01);
+        border:2x solid rgba(14,14,14,0.01);
+    }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        margin: 0;
+        padding: 20px;
+        background-color: white;
+    
+    }
+    .etiqueta1 {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: -14px; /* Ajusta el margen izquierdo */
+    }  
+    .numero {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .texto {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .form-inline input[type="text"] {
+        width: 50%;
+        margin-bottom: 5px; 
+    }
+    .form-inline label {
+        display: inline-block;
+        width: 100px; 
+        text-align: right; 
+        margin-right: 10px; 
+    }
+    .etiqueta2 {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 0px; /* Ajusta el margen izquierdo */
+    }  
+    .numero {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .texto {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .form-inline input[type="text"] {
+        width: 50%;
+        margin-bottom: 5px; 
+    }
+    .form-inline label {
+        display: inline-block;
+        width: 100px; 
+        text-align: right; 
+        margin-right: 10px; 
+    }
+    .etiqueta3 {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 177px; /* Ajusta el margen izquierdo */
+    }  
+    .numero {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .texto {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .form-inline input[type="text"] {
+        width: 50%;
+        margin-bottom: 5px; 
+    }
+    .form-inline label {
+        display: inline-block;
+        width: 100px; 
+        text-align: right; 
+        margin-right: 10px; 
+    }
+    .etiqueta4 {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 177px; /* Ajusta el margen izquierdo */
+    }  
+    .numero {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .texto {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .form-inline input[type="text"] {
+        width: 50%;
+        margin-bottom: 5px; 
+    }
+    .form-inline label {
+        display: inline-block;
+        width: 100px; 
+        text-align: right; 
+        margin-right: 10px;
+    }
+    .etiqueta5 {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 0px; /* Ajusta el margen izquierdo */
+    }  
+    .numero {
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .texto {
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    .form-inline input[type="text"] {
+        width: 50%;
+        margin-bottom: 5px; 
+    }
+    .form-inline label {
+        display: inline-block;
+        width: 100px; 
+        text-align: right; 
+        margin-right: 10px;
+    }
+    /* Estilo para las líneas de las filas */
+    table.table {
+        border-collapse: collapse;
+    }
+    table.table tr {
+        border-bottom: 2px solid black;
+    }
+    /* Estilo para las líneas de las columnas */
+    table.table th, table.table td {
+        border-right: 2px solid black;
+    }
+    table.table th:last-child, table.table td:last-child {
+        border-right: none; /* Evita que haya una línea en la última columna */
+    }
+    table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #ADD8E6;
+        }
+        .container {
+    margin-bottom: 0px !important;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-bottom: 20px; background-color: white">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col"><img src="ba.jpg" style="width: 200px; height: 200px;"></div>
+            <div class="col-6" style="text-align: center;">
+                <br><p class="fs-1"><h3>FORMATO ÚNICO</h3> </p>
+                <H1>
+                    <p class="fw-bold">HOJA DE VIDA</p>
+                </H1>
+                <br><h4>PERSONA NATURAL</h4><br>(Leyes 190 de 1995, 489 y 443 de 1998)</div>
+            <div class="col" style="text-align: center;">
+                <p class="fst-italic">ENTIDAD RECEPTORA</p>
+                <input type="text" name="ENTIDAD RECEPTORA" id="ENTIDAD RECEPTORA">
+            </div>
+        </div>
+        <div class="etiqueta1">
+            <div class="row">
+            <div class="col-lg">
+            <div class="numero">1</div>
+            <div class="texto">DATOS PERSONALES</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="margin-bottom: 20px; background-color: #cceeff">
+            <div class="row" style="border: 2px solid black;">
+                <div class="col" style="border: 2px solid black;">
+                    <table class="table table-bordered">
+                        <tr class="form-inline">
+                            <th>PRIMER APELLIDO</th>
+                            <td><input type="text" name="primer_apellido"></td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>SEGUNDO APELLIDO (O DE CASADA)</th>
+                            <td><input type="text" name="segundo_apellido"></td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>NOMBRES</th>
+                            <td><input type="text" name="nombres"></td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>NÚMERO DE IDENTIFICACIÓN</th>
+                            <td>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="cc">C.C</label>
+                                    <input class="form-check-input" type="radio" name="tipo_identificacion" value="cc" id="cc" checked onclick="mostrarNumero()">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="ce">C.E</label>
+                                    <input class="form-check-input" type="radio" name="tipo_identificacion" value="ce" id="ce" onclick="mostrarNumero()">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="pas">PAS</label>
+                                    <input class="form-check-input" type="radio" name="tipo_identificacion" value="pas" id="pas" onclick="mostrarNumero()">
+                                </div>
+                                <div class="form-check">
+                                <label class="form-check-label" for="N°">NO.</label>
+                                <input type="text" name="numero_identificacion" id="numero_identificacion">
+                            </td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>SEXO</th>
+                            <td>
+                                <input type="radio" name="sexo" value="F" checked> F
+                                <input type="radio" name="sexo" value="M"> M
+                            </td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>NACIONALIDAD</th>
+                            <td>
+                                <input type="radio" name="nacionalidad" value="colombiana" checked onclick="habilitarPais()"> COL.
+                                <input type="radio" name="nacionalidad" value="extranjera" onclick="habilitarPais()"> EXTRANJERO
+                                <input type="text" name="pais" id="pais"> PAÍS
+                            </td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>LIBRETA MILITAR</th>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="libreta_militar" value="primera_clase" id="primera_clase">
+                                    <label class="form-check-label" for="primera_clase">PRIMERA CLASE</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="libreta_militar" value="segunda_clase" id="segunda_clase">
+                                    <label class="form-check-label" for="segunda_clase">Segunda Clase</label>
+                                </div>
+                                <label class="form-check-label" for="numero_libreta">NÚMERO</label>
+                                <input type="text" name="numero_libreta" id="numero_libreta" class="form-control">
+                                <label class="form-check-label" for="D.M">D.M</label>
+                                <input type="text" name="distrito_militar" id="distrito_militar" class="form-control">
+                            </td>
+                        </tr>
+                        <tr class="form-inline">
+                            <th>FECHA Y LUGAR DE NACIMIENTO</th>
+                            <td>
+                                <div>
+                                    <label for="dia">DÍA:</label>
+                                    <input type="text" name="dia" id="dia">
+                                </div>
+                                <div>
+                                    <label for="mes">MES:</label>
+                                    <input type="text" name="mes" id="mes">
+                                </div>
+                                <div>
+                                    <label for="año">AÑO:</label>
+                                    <input type="text" name="año" id="año">
+                                </div>
+                                <div>
+                                    <label for="pais">PAÍS:</label>
+                                    <input type="text" name="pais" id="pais">
+                                </div>
+                                <div>
+                                    <label for="depto">DEPTO:</label>
+                                    <input type="text" name="depto" id="depto">
+                                </div>
+                                <div>
+                                    <label for="municipio_nacimiento">MUNICIPIO:</label>
+                                    <input type="text" name="municipio_nacimiento" id="municipio_nacimiento">
+                                </div>
+                            </td>
+                        </tr>                        
+                        <tr class="form-inline">
+                            <th>DIRECCIÓN DE CORRESPONDENCIA</th>
+                            <td>
+                                <label for="direccion_correspondencia">Dirección:</label>
+                                <input type="text" name="direccion_correspondencia" id="direccion_correspondencia">
+                                <br>
+                                <label for="pais_correspondencia">PAÍS:</label>
+                                <input type="text" name="pais_correspondencia" id="pais_correspondencia">
+                                <br>
+                                <label for="depto_correspondencia">DEPTO:</label>
+                                <input type="text" name="depto_correspondencia" id="depto_correspondencia">
+                                <br>
+                                <label for="municipio_correspondencia">MUNICIPIO:</label>
+                                <input type="text" name="municipio_correspondencia" id="municipio_correspondencia">
+                                <br>
+                                <label for="telefono">TELÉFONO:</label>
+                                <input type="text" name="telefono" id="telefono">
+                                <br>
+                                <label for="email">EMAIL:</label>
+                                <input type="text" name="email" id="email">
+                            </td>
+                       </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="etiqueta2">
+        <div class="row">
+            <div class="col-lg">
+                <div class="numero">2</div>
+                <div class="texto">FORMACIÓN ACADEMICA</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 20px; background-color: #cceeff">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col" style="border: 2px solid black;">
+                <label for="text" style="font-size: 19px; font-weight: bold;">EDUCACIÓN BÁSICA Y MEDIA</label>
+                <br>
+                <label for="text" style="font-size: 19px;">MARUE CON UNA X EL ÚLTIMO GRADO APROVADO (LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DE EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA)</label>
+                <div class="row justify-content-center" style="margin: 1%; border: 1px solid black; border-radius: 10px; width: 98%; height: 400px;">
+                    <table class="table" style="height: 100%;">
+                        <thead>
+                            <tr>
+                                <th colspan="3">EDUCACIÓN BÁSICA</th>
+                                <th colspan="1">TÍTULO OBTENIDO</th>
+                            </tr>
+                            <tr>
+                                <th>PRIMARIA</th>
+                                <th>SECUNDARIA</th>
+                                <th>MEDIA</th>
+                                <th>FECHA DE GRADO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="primaria1"><label for="primaria1">1o</label></td>
+                                <td><input type="checkbox" id="secundaria6"><label for="secundaria6">6o</label></td>
+                                <td><input type="checkbox" id="media10"><label for="media10">10o</label></td>
+                                <td rowspan="5"> <!-- Esto asegura que la celda abarque todas las filas de FECHA DE GRADO -->
+                                    <table>
+                                        <tr class="form-inline">
+                                            <label for="ciudad_fecha" class="form-label" style="font-size: 19px; color: rgba(0, 0, 0, 0.706);">MES</label>
+                                            <input type="text" class="borde-negro" id="otroCampo" style="width: 20%; height: 30px; margin-left: 10px;">
+                                            <label for="ciudad_fecha" class="form-label" style="font-size: 19px; color: rgba(0, 0, 0, 0.706); margin-left: 10px;">AÑO</label>
+                                            <input type="text" class="borde-negro" id="otroCampo" style="width: 20%; height: 30px; margin-left: 10px;">
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="primaria2"><label for="primaria2">2o</label></td>
+                                <td><input type="checkbox" id="secundaria7"><label for="secundaria7">7o</label></td>
+                                <td><input type="checkbox" id="media11"><label for="media11">11o</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="primaria3"><label for="primaria3">3o</label></td>
+                                <td><input type="checkbox" id="secundaria8"><label for="secundaria8">8o</label></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="primaria4"><label for="primaria4">4o</label></td>
+                                <td><input type="checkbox" id="secundaria9"><label for="secundaria9">9o</label></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="primaria5"><label for="primaria5">5o</label></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container" style="margin-bottom: 20px; background-color: #cceeff">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col" style="border: 2px solid black;">
+                <label for="text" style="font-size: 19px; font-weight: bold;">EDUCACIÓN SUPERIOR (PREGRADO Y POSGRADO)</label>
+                <label for="text" style="font-size: 19px;">DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:</label>
+                <label for="text" style="font-size: 19px;">TC (TÉCNICA), TL (TECNOLÓGICA), TE (TECNOLÓGICA ESPECIALIZADA), UN (UNIVERSITARIA).</label>
+                <label for="text" style="font-size: 19px;">ES (ESPECIALIZACIÓN), MG (MAESTRÍA O MAGISTER), DOC (DOCTORADO O PHD).</label>
+                <label for="text" style="font-size: 19px;">RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFECIONAL (SI ESTA HA SIDO PREVISTA POR UNA LEY)</label>
+                <div class="row justify-content-center" style="margin: 1%; border: 1px solid black; border-radius: 10px; width: 98%; height: 400px;">
+                    <table class="table" style="height: 100%;">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">MODALIDA ACADÉMICA</th>
+                                <th rowspan="2">NO. SEMESTRES APROBADOS</th>
+                                <th colspan="2">GRADUADO</th>
+                                <th rowspan="2">NOMBRE DE LOS ESTUDIOS O TÍTULO OBTENIDO</th>
+                                <th colspan="2">TERMINACIÓN</th>
+                                <th rowspan="2">NO. DE TARJETA PROFECIONAL</th>
+                            </tr>
+                            <tr>
+                                <th>SI</th>
+                                <th>NO</th>
+                                <th>MES</th>
+                                <th>AÑO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                            </tr>
+                        </tbody>
+                        <tr>
+                            <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td><td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <div class="container" style="margin-bottom: 20px; background-color: #cceeff">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col" style="border: 2px solid black;">
+                <label for="text" style="font-size: 19px;">ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (R), BIEN (B) O MUY BIEN (MB)</label>
+                <div class="row justify-content-center" style="margin: 1%; border: 1px solid black; border-radius: 10px; width: 98%; height: 400px;">
+                    <table class="table" style="height: 100%;">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">IDIOMAS</th>
+                                <th colspan="3">LO HABLA</th>
+                                <th colspan="3">LO LEE</th>
+                                <th colspan="3">LO ESCRIBE</th>
+                            </tr>
+                            <tr>
+                                <th>R</th>
+                                <th>B</th>
+                                <th>MB</th>
+                                <th>R</th>
+                                <th>B</th>
+                                <th>MB</th>
+                                <th>R</th>
+                                <th>B</th>
+                                <th>MB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                <td><input type="checkbox" id="idioma1_r"></td>
+                                <td><input type="checkbox" id="idioma1_b"></td>
+                                <td><input type="checkbox" id="idioma1_mb"></td>
+                                <td><input type="checkbox" id="idioma1_lee_r"></td>
+                                <td><input type="checkbox" id="idioma1_lee_b"></td>
+                                <td><input type="checkbox" id="idioma1_lee_mb"></td>
+                                <td><input type="checkbox" id="idioma1_escribe_sp"></td>
+                                <td><input type="checkbox" id="idioma1_escribe_ap"></td>
+                                <td><input type="checkbox" id="idioma1_escribe_ex"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                <td><input type="checkbox" id="idioma2_r"></td>
+                                <td><input type="checkbox" id="idioma2_b"></td>
+                                <td><input type="checkbox" id="idioma2_mb"></td>
+                                <td><input type="checkbox" id="idioma2_lee_r"></td>
+                                <td><input type="checkbox" id="idioma2_lee_b"></td>
+                                <td><input type="checkbox" id="idioma2_lee_mb"></td>
+                                <td><input type="checkbox" id="idioma2_escribe_sp"></td>
+                                <td><input type="checkbox" id="idioma2_escribe_ap"></td>
+                                <td><input type="checkbox" id="idioma2_escribe_ex"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="col-6" style="text-align: center;">
+        <br><p class="fs-1"><h3>FORMATO ÚNICO</h3> </p>
+        <H1>
+            <p class="fw-bold">HOJA DE VIDA</p>
+        </H1>
+        <br><h4>PERSONA NATURAL</h4><br>(Leyes 190 de 1995, 489 y 443 de 1998)</div>
+    <div class="etiqueta5">
+        <div class="row">
+            <div class="col-lg">
+                <div class="numero">3</div>
+                <div class="texto">EXPERIENCIA LABORAL</div>
+            </div>
+        </div>
+    </div>
+    <div class="subcontainer-5" style="margin-bottom: 20px; background-color: #cceeff; border: 2px solid black;"> 
+        <!-- TABLA DE LA EXPERIENCIA LABORAL -->
+        <!-- Fila #1 -->
+        <div class="row">
+            <!-- COLUMNA #1 TITULO DE LA PAGUINA -->
+            <div id="title" class="col-md">
+                <p>RELACIONE SU EXPERIENCIA LABORAL O DE PRESTACIÓN  DE SERVICIOS EN  ESTRICTO ORDEN  CRONOLÓGICO COMENZANDO POR EL ACTUAL</p>
+            </div>
+        </div>
+        <!-- Fila #2 -->
+        <div class="row">
+            <div id="subtitle" class="col-md">EMPLEO ACTUAL O CONTRATO VIGENTE</div>
+        </div>
+        <!-- Fila #3 -->
+        <!-- ENTIDADES -->
+        <div class="row">
+            <div id="excol1" class="col-md-5">EMPRESA O ENTIDAD</div>
+            <div id="excol2" class="col-md-2"><p>PÚBLICA</p><br></div>
+            <div id="excol3" class="col-md-2">PRIVADA</div>
+            <div id="excol4" class="col-md-3">PAÍS</div>
+        </div>
+        <!-- Fila #4 -->
+        <!-- DEPARTAMENTOS -->
+        <div class="row">
+            <div id="excol01" class="col-md">DEPARTAMENTO</div>
+            <div id="excol02" class="col-md"><p>MUNICIPIO</p><br></div>
+            <div id="excol03" class="col-md">CORREO ELECTRONICO ENTIDAD</div>
+        </div>
+        <!-- Fila #5 -->
+        <!-- FECHAS -->
+        <div class="row">
+            <div id="excol01" class="col-md">TELÉFONOS</div>
+            <div id="excol02" class="col-md">FECHA INGRESO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+            <div id="excol03" class="col-md">FECHA DE RETIRO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+        </div>
+        <!-- Fila #6 -->
+        <div class="row">
+            <div id="excol01" class="col-md">CARGO O CONTRATO ACTUAL</div>
+            <div id="excol02" class="col-md"><p>DEPENDENCIA</p><br></div>
+            <div id="excol03" class="col-md">DIRECCIÓN</div>
+        </div>
+        <!-- Fila #7 -->
+        <div class="row">
+            <div id="subtitle" class="col-md">EMPLEO O CONTRATO ANTERIOR</div>
+        </div>
+        <!-- Fila #8 -->
+        <div class="row">
+            <div id="excol1" class="col-md-5">EMPRESA O ENTIDAD</div>
+            <div id="excol2" class="col-md-2">PÚBLICA</div>
+            <div id="excol3" class="col-md-2"><p>PRIVADA</p><br></div>
+            <div id="excol4" class="col-md-3">PAÍS</div>
+        </div>
+        <!-- Fila #9 -->
+        <div class="row">
+            <div id="excol01" class="col-md">DEPARTAMENTO</div>
+            <div id="excol02" class="col-md"><p>MUNICIPIO</p><br></div>
+            <div id="excol03" class="col-md">CORREO ELECTRONICO ENTIDAD</div>
+        </div>
+        <!-- Fila #10 -->
+        <div class="row">
+            <div id="excol01" class="col-md">TELÉFONOS</div>
+            <div id="excol02" class="col-md">FECHA INGRESO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+            <div id="excol03" class="col-md">FECHA DE RETIRO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+        </div>
+        <!-- Fila #11 -->
+        <div class="row">
+            <div id="excol01" class="col-md">CARGO O CONTRATO ACTUAL</div>
+            <div id="excol02" class="col-md"><p>DEPENDENCIA</p><br></div>
+            <div id="excol03" class="col-md">DIRECCIÓN</div>
+        </div>
+        <!-- Fila #12 -->
+        <div class="row">
+            <div id="subtitle" class="col-md">EMPLEO O CONTRATO ANTERIOR</div>
+        </div>
+        <!-- Fila #13 -->
+        <div class="row">
+            <div id="excol1" class="col-md-5">EMPRESA O ENTIDAD</div>
+            <div id="excol2" class="col-md-2">PÚBLICA</div>
+            <div id="excol3" class="col-md-2"><p>PRIVADA</p><br></div>
+            <div id="excol4" class="col-md-3">PAÍS</div>
+        </div>
+        <!-- Fila #14 -->
+        <div class="row">
+            <div id="excol01" class="col-md">DEPARTAMENTO</div>
+            <div id="excol02" class="col-md"><p>MUNICIPIO</p><br></div>
+            <div id="excol03" class="col-md">CORREO ELECTRONICO ENTIDAD</div>
+        </div>
+        <!-- Fila #15 -->
+        <div class="row">
+            <div id="excol01" class="col-md">TELÉFONOS</div>
+            <div id="excol02" class="col-md">FECHA INGRESO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+            <div id="excol03" class="col-md">FECHA DE RETIRO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+        </div>
+        <!-- Fila #16 -->
+        <div class="row">
+            <div id="excol01" class="col-md">CARGO O CONTRATO ACTUAL</div>
+            <div id="excol02" class="col-md"><p>DEPENDENCIA</p><br></div>
+            <div id="excol03" class="col-md">DIRECCIÓN</div>
+        </div>
+        <!-- Fila #17 -->
+        <div class="row">
+            <div  id="subtitle" class="col-md">EMPLEO O CONTRATO ANTERIOR</div>
+        </div>
+        <!-- Fila #18 -->
+        <div class="row">
+            <div id="excol1" class="col-md-5">EMPRESA O ENTIDAD</div>
+            <div id="excol2" class="col-md-2">PÚBLICA</div>
+            <div id="excol3" class="col-md-2"><p>PRIVADA</p><br></div>
+            <div id="excol4" class="col-md-3">PAÍS</div>
+        </div>
+        <!-- Fila #19 -->
+        <div class="row">
+            <div id="excol01" class="col-md">DEPARTAMENTO</div>
+            <div id="excol02" class="col-md"><p>MUNICIPIO</p><br></div>
+            <div id="excol03" class="col-md">CORREO ELECTRONICO ENTIDAD</div>
+        </div>
+        <!-- Fila #20 -->
+        <div class="row">
+            <div id="excol01" class="col-md">TELÉFONOS</div>
+            <div id="excol02" class="col-md">FECHA INGRESO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+            <div id="excol03" class="col-md">FECHA DE RETIRO <br>
+                DÍA
+                <input  id="tiempo" type="number" min="1" max="31">
+                MES
+                <input id="tiempo"type="number" min="1" max="12">
+                AÑO
+                <input id="tiempo" type="number" min="1900" max="2100"><br>
+            </div>
+        </div>
+        <!-- Fila #21 -->
+        <div class="row">
+            <div id="excol01" class="col-md">CARGO O CONTRATO ACTUAL</div>
+            <div id="excol02" class="col-md"><p>DEPENDENCIA</p><br></div>
+            <div id="excol03" class="col-md">DIRECCIÓN</div>
+        </div>
+    </div>
+    <div class="col-6" style="text-align: center;">
+                <br><p class="fs-1"><h3>FORMATO ÚNICO</h3> </p>
+                <H1>
+                    <p class="fw-bold">HOJA DE VIDA</p>
+                </H1>
+                <br><h4>PERSONA NATURAL</h4><br>(Leyes 190 de 1995, 489 y 443 de 1998)</div>
+    <div class="etiqueta2">
+        <div class="row">
+            <div class="col-lg">
+                <div class="numero">4</div>
+                <div class="texto">TIEMPO TOTAL DE EXPERIENCIA</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-bottom: 20px; background-color: #cceeff">
+        <div class="row" style="border: 2px solid black;">
+            <div class="col" style="border: 2px solid black;">
+                    <label for="text" style="font-size: 19px;">INDIQUE EL TIEMPO TOTAL DE SU EXPERIENCIA LABORAL, EN NÚMERO DE AÑOS Y MESES.</label>
+                    <div class="row justify-content-center" style="margin: 1%; border: 1px solid black; border-radius: 10px; width: 98%; height: 400px;">
+                            <table class="table" style="height: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">OCUPACIÓN</th>
+                                        <th colspan="2">TIEMPO DE EXPERIENCIA</th>
+                                    </tr>
+                                    <tr>
+                                        <th>MESES</th>
+                                        <th>AÑOS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>SERVIDOR PÚBLICO</td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EMPLEADO DEL SECTOR PRIVADO</td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TRABAJADOR INDEPENDIENTE</td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TOTAL TIEMPO EXPERIENCIA</td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                        <td><input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="etiqueta3">
+            <div class="row">
+            <div class="col-lg">
+            <div class="numero">5</div>
+            <div class="texto">FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</div>
+            </div>
+          </div>
+        </div>     
+        <div class="container" style="background-color: #cceeff;">
+            <div class="row" style="border: 2px solid black;">
+                <div class="col" style="border: 2px solid black;">
+                    <label for="si" style="font-size: 19px;">MANIFIESTO BAJO LA GRAVEDAD DEL JURAMENTO QUE SI</label>
+                    <input type="radio" id="si" name="respuesta" value="si">
+                    <label for="no" style="font-size: 19px;">NO</label>
+                    <input type="radio" id="no" name="respuesta" value="no">
+                    <label for="si" style="font-size: 19px; margin-left: 2px;">ME ENCUENTRO DENTRO DE LAS CAUSALES DE INHABILIDAD E INCOMPATIBILIDAD DEL ORDEN CONSTITUCIONAL O LEGAL, PARA EJERCER CARGOS EMPLEOS PÚBLICOS O PARA CELEBRAR CONTRATOS DE PRESTACIÓN DE SERVICIOS CON LA ADMINISTRACIÓN PÚBLICA.</label>
+                    <br>
+                    <br>
+                    <label for="text" style="font-size: 19px;">PARA TODOS LOS EFECTOS LEGALES. CERTIFICO QUE LOS DATOS POR MI ANOTADOS EN EL PRESENTE FORMATO ÚNICO DE HOJA DE VIDA, SON VERACES, (ARTICULO 5o. DE LA LEY 190/95).</label>
+                    <br>
+                    <br>
+                    <label for="ciudad_fecha" class="form-label" style="font-size: 19px; color: rgba(0, 0, 0, 0.706);">Ciudad y Fecha de diligenciamiento</label>
+                    <input type="text" class="borde-negro" id="otroCampo" style="width: 70%; height: 30px; margin-left: 8x;">
+                    <br>
+                    <br>
+                    <input type="text" class="borde-negro" id="otroCampo" style="width: 37%; height: 30px; margin-left: 430px;">
+                    <label for="text" class="form-label" style= "width: 50%; height: 30px; margin-left: 500px; color: rgba(0, 0, 0, 0.706);">FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</label>
+                </div>
+            </div>
+        </div>
+        <div class="etiqueta4">
+            <div class="row">
+            <div class="col-lg">
+            <div class="numero">6</div>
+            <div class="texto">OBSERVACIONES DEL JEFE DE RECURSOS HUMANOS Y/O CONTRATOS</div>
+            </div>
+          </div>
+        </div>
+        <div class="container" style="background-color: #cceeff;">
+            <div class="row" style="border: 2px solid black;">
+                <div class="col" style="border: 2px solid black;">
+                    <div class="row justify-content-center" style="margin: 1%; border: 1px solid black; border-radius: 10px; width: 98%; height: 200px;">
+                        <div class="col">
+                            <input type="text" class="sin-estilo" id="text" style="width: 100%; height: 40px;">
+                        </div>
+                    </div>
+                    <label for="text" style="font-size: 19px;">CERTIFICO QUE LA INFORMACIÓN AQUÍ SUMINISTRADA HA SIDO CONSTRATADA FRENTE A LOS DOCUMENTOS QUE HAN SIDO PRSENTADOS COMO SOPORTE.</label><br>
+                    <br>
+                    <input type="text" class="borde-negro" id="otroCampo" style="width: 20%; height: 30px;">
+                    <input type="text" class="borde-negro" id="otroCampo" style="width: 37%; height: 30px; margin-left: 44px;">
+                    <br>
+                    <label for="text" class="form-label" style="color: rgba(0, 0, 0, 0.5);">Ciudad y Fecha</label> 
+                    <label for="text" class="form-label" style= "width: 50%; height: 30px; margin-left: 213px; color: rgba(0, 0, 0, 0.5);">NOMBRE Y FIRMA DEL JEFE DEL PERSONAL O DE CONTRACTOS</label>
+                </div>
+            </div>
+        </div>
+    <br>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+            
+
+
